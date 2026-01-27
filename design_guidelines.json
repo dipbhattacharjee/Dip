@@ -1,0 +1,162 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "Birds Eye Media",
+      "archetype": "The Visionary / The Architect",
+      "vibe": "Cinematic, Aerial, Precision, Flow",
+      "emotional_tone": "The view from above. Expansive, smooth, high-tech but organic."
+    },
+    "theme": {
+      "mode": "dark",
+      "strategy": "Forced Dark Mode. The brand is cinema; light mode breaks the immersion.",
+      "backgrounds": {
+        "page": "#030303",
+        "surface": "#0A0A0A",
+        "surface_highlight": "#171717",
+        "overlay": "rgba(3, 3, 3, 0.8)"
+      }
+    },
+    "typography": {
+      "font_family": {
+        "heading": ["Manrope", "sans-serif"],
+        "body": ["DM Sans", "sans-serif"],
+        "accent": ["Barlow Condensed", "sans-serif"]
+      },
+      "scale": {
+        "h1": "text-6xl md:text-8xl font-bold tracking-tighter",
+        "h2": "text-4xl md:text-5xl font-semibold tracking-tight",
+        "h3": "text-2xl md:text-3xl font-medium",
+        "body": "text-base md:text-lg leading-relaxed text-muted-foreground",
+        "label": "text-xs font-bold uppercase tracking-[0.2em] text-accent"
+      },
+      "imports": [
+        "@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=DM+Sans:opsz,wght@9..40,100..1000&family=Barlow+Condensed:wght@400;600&display=swap');"
+      ]
+    },
+    "colors": {
+      "palette": {
+        "primary": "#4AAFB8",
+        "primary_glow": "#2DD4BF",
+        "secondary": "#FFFFFF",
+        "muted": "#A1A1AA",
+        "border": "rgba(255, 255, 255, 0.1)",
+        "glass": "rgba(10, 10, 10, 0.6)"
+      },
+      "tailwind_extension": {
+        "colors": {
+          "brand": {
+            "DEFAULT": "#4AAFB8",
+            "glow": "#2DD4BF",
+            "dark": "#2D6A70"
+          },
+          "obsidian": {
+            "DEFAULT": "#030303",
+            "card": "#0A0A0A",
+            "border": "#1F1F1F"
+          }
+        },
+        "backgroundImage": {
+          "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+          "hero-glow": "conic-gradient(from 180deg at 50% 50%, #2a8af6 0deg, #a853ba 180deg, #e92a67 360deg)"
+        }
+      }
+    },
+    "layout": {
+      "spacing": {
+        "container_padding": "px-6 md:px-12 lg:px-24",
+        "section_gap": "py-24 md:py-32",
+        "element_gap": "gap-6 md:gap-12"
+      },
+      "grids": {
+        "bento": "grid grid-cols-1 md:grid-cols-3 gap-6",
+        "masonry": "columns-1 md:columns-2 lg:columns-3 gap-8 space-y-8"
+      },
+      "border_radius": {
+        "card": "rounded-xl",
+        "button": "rounded-full"
+      }
+    },
+    "motion": {
+      "library": "framer-motion",
+      "scroll": "lenis",
+      "principles": {
+        "hover": "scale-105 transition-all duration-300 ease-out",
+        "reveal": "initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, ease: 'easeOut' }}",
+        "stagger": "staggerChildren: 0.1"
+      }
+    }
+  },
+  "assets": {
+    "images": {
+      "hero_bg": "https://images.unsplash.com/photo-1734679257876-5d65ab805dd7?q=80&w=2000&auto=format&fit=crop",
+      "about_vision": "https://images.unsplash.com/photo-1635255073353-8ecb44e419cc?q=80&w=1000&auto=format&fit=crop",
+      "services_cinematography": "https://images.unsplash.com/photo-1612544409025-e1f6a56c1152?q=80&w=800&auto=format&fit=crop",
+      "services_drone": "https://images.unsplash.com/photo-1635255073378-ac341396271b?q=80&w=800&auto=format&fit=crop",
+      "services_production": "https://images.unsplash.com/photo-1579912437184-595291124a34?q=80&w=800&auto=format&fit=crop",
+      "team_meeting": "https://images.unsplash.com/photo-1758873269317-51888e824b28?q=80&w=1000&auto=format&fit=crop",
+      "studio_interior": "https://images.unsplash.com/photo-1760611656007-f767a8082758?q=80&w=1000&auto=format&fit=crop",
+      "contact_bg": "https://images.unsplash.com/photo-1634922417463-80cd5a4c5f7d?q=80&w=2000&auto=format&fit=crop"
+    },
+    "icons": "lucide-react"
+  },
+  "components": {
+    "Navbar": {
+      "style": "fixed top-0 left-0 right-0 z-50 bg-obsidian/80 backdrop-blur-md border-b border-white/5",
+      "elements": ["Logo (Text: Birds Eye)", "NavLinks (Home, About, Services, Work, Contact)", "CTA Button (Book Now)"]
+    },
+    "Hero": {
+      "style": "h-screen relative flex items-center justify-center overflow-hidden",
+      "content": {
+        "headline": "Seeing the world from a bird's eye view",
+        "subheadline": "Premium aerial cinematography and digital media production.",
+        "cta": "View Our Work"
+      },
+      "features": ["Video Background or Parallax Image", "Scroll Indicator", "Floating Stats Cards"]
+    },
+    "Stats": {
+      "style": "absolute bottom-12 right-12 flex gap-8 bg-black/40 backdrop-blur-md p-6 rounded-2xl border border-white/10",
+      "data": [
+        {"label": "Projects", "value": "500+"},
+        {"label": "Clients", "value": "120+"},
+        {"label": "Awards", "value": "15+"}
+      ]
+    },
+    "Services": {
+      "layout": "Bento Grid (Mode A)",
+      "cards": [
+        {"title": "Cinematography", "icon": "Camera", "desc": "4K/8K production with cinema-grade gear."},
+        {"title": "Drone Footage", "icon": "Aperture", "desc": "FAA certified pilots, FPV and heavy lift."},
+        {"title": "Brand Identity", "icon": "PenTool", "desc": "Visual systems that tell your story."},
+        {"title": "Digital Marketing", "icon": "BarChart", "desc": "Data-driven campaigns."},
+        {"title": "Post-Production", "icon": "MonitorPlay", "desc": "Editing, color grading, and VFX."},
+        {"title": "Creative Strategy", "icon": "Lightbulb", "desc": "From concept to final delivery."}
+      ]
+    },
+    "Portfolio": {
+      "layout": "Masonry Grid with Filter Tabs",
+      "filters": ["All Works", "Motion Graphics", "Aerial Film", "Brand Design", "Photography"]
+    },
+    "Contact": {
+      "style": "Split layout: Left Info / Right Form",
+      "form_style": "Shadcn Form, transparent inputs with bottom border only (Underline style)"
+    }
+  },
+  "instructions_to_main_agent": [
+    "INSTALLATION: Run `npm install framer-motion lenis` immediately.",
+    "SETUP: Configure `tailwind.config.js` to add the custom colors (obsidian, brand) defined in `design_system.colors`.",
+    "FONTS: Add the Google Fonts import to `index.css`.",
+    "GLOBAL CSS: Set `body { @apply bg-obsidian text-white font-body; }` in `index.css`.",
+    "ANIMATION: Wrap the entire app in `<ReactLenis root>` for smooth scrolling.",
+    "COMPONENTS: Use `framer-motion` for all entrance animations. Do not use static CSS transitions for page loads.",
+    "FORMS: Customize Shadcn Input components to remove the default ring and background. Use `bg-transparent border-b border-white/20 focus:border-brand rounded-none px-0`.",
+    "IMAGES: Use the provided Unsplash URLs. Do not use placeholders.",
+    "TESTING: Add `data-testid` to all interactive elements (buttons, inputs, links)."
+  ],
+  "universal_guidelines": [
+    "Do not use gradients for backgrounds, use solid deep colors or noise textures.",
+    "Use 2-3x more spacing than typical designs.",
+    "Every interaction needs micro-animations.",
+    "Never use generic centered layouts without a twist.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur)."
+  ]
+}
