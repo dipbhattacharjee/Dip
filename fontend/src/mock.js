@@ -6,11 +6,11 @@ export const personalInfo = {
   title: "AI & Full-Stack Developer",
   tagline: "Building Intelligent Systems & Modern Web Applications",
   bio: "I am a self-taught AI & Full-Stack Developer from India. I build intelligent systems, chatbots, and modern web applications. My expertise includes Machine Learning, Deep Learning, NLP, and Full-Stack Web Development with React, Node.js, and Python. Currently building next-gen AI Agents and JARVIS-like Personal Assistants. I have a competitive programming mindset and a deep passion for automation. Code is poetry, AI is the canvas.",
-  email: "Dipl1234@gmail.com",
+  email: "bhattacharjeedip3@gmail.com",
   github: "https://github.com/Dipbhattacharjee",
   linkedin: "https://www.linkedin.com/in/dip-bhattacharjee-aa833430a/",
   avatar: "image/avatar.png",
-  resumeUrl: "https://example.com/resume.pdf",
+  resumeUrl: "/DipBhattacharjee_Resume.pdf",
   interests: [
     "Machine Learning",
     "Deep Learning",
