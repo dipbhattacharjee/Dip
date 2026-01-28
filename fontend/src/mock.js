@@ -213,7 +213,7 @@ export const blogPosts = [
     comments: 12,
     excerpt: "A beginner's guide to JavaScript fundamentals including variables, functions, and DOM manipulation.",
     image: "https://dipbhattacharjee.github.io/Protfolio-website/js.png",
-    url: "#"
+    url: "https://dipbhattacharjee.blogspot.com/2026/01/getting-started-with-javascript.html"
   },
   {
     id: 2,
@@ -223,7 +223,7 @@ export const blogPosts = [
     comments: 8,
     excerpt: "Learn how to create websites that look great on all devices using modern CSS techniques.",
     image: "https://dipbhattacharjee.github.io/Protfolio-website/css.png",
-    url: "#"
+    url: "https://dipbhattacharjee.blogspot.com/2026/01/responsive-design-principles.html"
   },
   {
     id: 3,
@@ -233,6 +233,6 @@ export const blogPosts = [
     comments: 15,
     excerpt: "Everything you need to know to start using version control in your projects.",
     image: "https://dipbhattacharjee.github.io/Protfolio-website/git.png",
-    url: "#"
+    url: "https://dipbhattacharjee.blogspot.com/2026/01/introduction-to-git-and-github.html"
   }
 ];
