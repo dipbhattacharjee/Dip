@@ -464,7 +464,7 @@ const Home = () => {
       {/* Footer */}
       <footer className="dark-footer">
         <div className="footer-content">
-          <p className="footer-text">© 2025 {personalInfo.name}. Built with React & FastAPI.</p>
+          <p className="footer-text">© 2026 {personalInfo.name}. Built with React & FastAPI.</p>
           <div className="footer-links">
             <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="footer-link">
               <Github className="w-4 h-4" />
